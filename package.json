@@ -1,16 +1,24 @@
 {
   "name": "simsim",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.1",
+  "description": "mongodb magi simsimi",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "chatbot",
+    "express",
+    "mongodb",
+    "translation",
+    "math"
+  ],
   "author": "ArYAN",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^18.0.6",
-    "axios": "^1.7.9"
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.4"
   }
 }
