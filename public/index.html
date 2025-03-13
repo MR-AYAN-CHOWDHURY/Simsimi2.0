@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>亗ㅤ𝐕𝐄𝐗 𝐀𝐃𝐍𝐀𝐍ㅤ亗 -Chatbot</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Background Change</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            transition: background 0.5s ease-in-out;
+        }
+        .container {
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .name {
+            display: none;
+            font-size: 48px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <h1>Chatbot</h1>
 
+    <div class="container">
+        <button class="button" onclick="changeBackground()">Click API URL</button>
+        <div class="name" id="name">Anthony</div>
+    </div>
 
-  <div id="chat-container">
-    <div id="chat-box"></div>
-    <form id="chat-form">
-      <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off" required />
-      <button type="submit">Send</button>
-    </form>
-  </div>
+    <script>
+        function changeBackground() {
+            document.body.style.background = 'url(https://i.imgur.com/XgGbw7u.gif) no-repeat center center/cover';
+            document.getElementById('name').style.display = 'block';
+        }
+    </script>
 
-  
-  <div id="teach-container">
-    <h2>Teach the Bot</h2>
-    <form id="teach-form">
-      <input type="text" id="teach-ask" placeholder="Question (ask)" autocomplete="off" required />
-      <input type="text" id="teach-ans" placeholder="Answer (ans)" autocomplete="off" required />
-      <button type="submit">Teach</button>
-    </form>
-    <div id="teach-response"></div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
