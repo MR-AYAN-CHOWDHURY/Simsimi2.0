@@ -1,24 +1,22 @@
 {
-  "name": "simsim",
-  "version": "0.0.1",
-  "description": "mongodb magi simsimi",
+  "name": "chatbot-server",
+  "version": "1.0.0",
+  "description": "A chatbot server using Node.js, Express, and MongoDB",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "keywords": [
-    "chatbot",
-    "express",
-    "mongodb",
-    "translation",
-    "math"
-  ],
-  "author": "ArYAN",
-  "license": "ISC",
   "dependencies": {
-    "axios": "^1.4.0",
+    "axios": "^1.5.0",
     "body-parser": "^1.20.2",
     "express": "^4.18.2",
-    "mongoose": "^7.3.4"
-  }
+    "mathjs": "^11.5.0",
+    "mongoose": "^7.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "author": "Anthony",
+  "license": "MIT"
 }
